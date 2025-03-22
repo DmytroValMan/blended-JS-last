@@ -9,3 +9,11 @@ export const createMarkupProducts = data => {
     })
     .join('');
 };
+
+export const createMarkupProductById = ({ thumbnail, title, description }) => {
+  return `<li>
+        <img src="${thumbnail}" alt="${title}">
+        <h3>${title}</h3>
+        <p>${description}</p>
+      </li>`;
+};
